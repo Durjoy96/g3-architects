@@ -13,9 +13,126 @@
     --base-content-secondary: rgb(114, 114, 114);
     --primary: rgb(255, 144, 14);
     --primary-content: #ffffff;
+    --dark-2: rgb(66, 66, 66);
+}
+
+/* shared styles */
+.description {
+    color: var(--base-content-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.primary-btn {
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    color: var(--primary-content);
+    background-color: var(--primary);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    cursor: pointer;
 }
 
 /* body styles */
 body {
     font-family: "Work Sans", sans-serif;
+}
+
+/* header styles */
+header {
+    background-color: var(--base-200);
+    padding: 0 1rem;
+}
+
+/* navbar styles */
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    color: var(--base-content);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.nav-pages-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-page-link {
+    text-decoration: none;
+    color: var(--dark-2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* banner styles */
+.banner {
+    max-width: 1440px;
+    margin: 100px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content {
+    max-width: 862px;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.tagline {
+    width: 100%;
+    color: var(--base-content);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+
+}
+
+.banner-content .description {
+    margin: 32px 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* header mobile screen styles */
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .nav-pages-links {
+        flex-flow: row wrap;
+    }
+
+    .banner {
+        margin: 60px auto 0;
+    }
+
+    .tagline {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .text-break {
+        display: none;
+    }
 }
