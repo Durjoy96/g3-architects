@@ -118,8 +118,8 @@ header {
     width: 100%;
 }
 
-/* header mobile screen styles */
-@media screen and (max-width: 576px) {
+/* header mobile and tablet screen styles */
+@media screen and (max-width: 992px) {
     .navbar {
         flex-direction: column;
         gap: .5rem;
@@ -193,8 +193,8 @@ main {
     margin: 1.5rem 0 2rem;
 }
 
-/* features section mobile devices styles */
-@media screen and (max-width: 576px) {
+/* features section mobile and tablet devices styles */
+@media screen and (max-width: 992px) {
 
     .features-img-container {
         /* grid-template-columns: repeat(2, 1fr); */
@@ -259,12 +259,14 @@ main {
 
 .features-list-second-column {
     max-width: 708px;
+    height: 1059px;
     padding: 0 0 77px 92px;
     position: relative;
 }
 
 .features-list-second-column img {
     width: 100%;
+    height: 982px;
 }
 
 .experience-card {
@@ -292,4 +294,26 @@ main {
     line-height: 40px;
     color: var(--primary-content);
     text-align: center;
+}
+
+/* features list section mobile devices styles */
+@media screen and (max-width: 992px) {
+    .features-list {
+        flex-direction: column;
+    }
+
+    .features-list-second-column {
+        padding: 0 0 2rem 2rem ;
+        height: auto;
+    }
+
+    .features-list-second-column img  {
+        height: auto;
+    }
+
+    .experience-card-title  {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
 }
