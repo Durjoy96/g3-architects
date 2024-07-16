@@ -381,6 +381,6 @@ main {
     .facts-cards {
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
-        margin: 70px 2rem 0;
+        margin: 70px 0 0;
     }
 }
